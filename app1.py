@@ -9,12 +9,7 @@ from dash import Dash, dcc, html, Input, Output, callback
 import plotly.graph_objs as go
 import pandas as pd
 
-
-
-
-
-
-
+DATA = pd.read_pickle("sensorDATA.pkl")
 
 app = Dash(__name__)
 
