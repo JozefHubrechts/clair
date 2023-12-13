@@ -8,17 +8,16 @@ import dash
 from dash import Dash, dcc, html, Input, Output, callback
 import plotly.graph_objs as go
 import pandas as pd
-import dash_auth
 
 
 
 
 
-DATA = pd.read_pickle("sensorDATA.pkl")
-USERNAME_PASSWORD_PAIRS = [['JamesBond', '007'],['4stem','isfun']]
+
+
 
 app = Dash(__name__)
-auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD_PAIRS)
+
 server = app.server
 
 #sensorList=['field1', 'field2', 'field3', 'field4', 'field5', 'field6', 'field7', 'field8']
