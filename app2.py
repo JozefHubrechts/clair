@@ -11,6 +11,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div([
     dcc.RangeSlider(
